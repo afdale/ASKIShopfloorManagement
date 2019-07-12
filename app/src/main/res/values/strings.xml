@@ -1,0 +1,843 @@
+<resources>
+    <string name="app_name">ASKI Shopfloor Management</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="startstop">Check In / Check Out</string>
+    <string name="rejectkomponen">Reject Komponen</string>
+    <string name="andon">Andon</string>
+    <string name="setting">Setting</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_startstop_fragment">Hello Start Stop fragment</string>
+    <string name="hello_andon_fragment">Hello Andon fragment</string>
+    <string name="hello_rejectkomponen_fragment">Hello Reject Komponen fragment</string>
+
+    <string-array name="rejectkomponen">
+        <item>N/A</item>
+        <item>Distorsi</item>
+        <item>Scratch/Gores</item>
+        <item>Burry</item>
+        <item>Bengkok</item>
+        <item>Patah</item>
+        <item>Kotor</item>
+        <item>Silver</item>
+        <item>Duplicate</item>
+        <item>Serabut</item>
+        <item>Flow Mark</item>
+        <item>Burn Mark</item>
+        <item>Lepas</item>
+        <item>Over cut</item>
+        <item>Short shot</item>
+        <item>Crack</item>
+        <item>Gompal</item>
+        <item>Stud Nut/Stud Bolt tidak ada</item>
+        <item>Collar tidak ada</item>
+        <item>Grepes</item>
+        <item>Staind</item>
+        <item>Bintik</item>
+        <item>Korosi</item>
+        <item>Blackspot</item>
+        <item>Whitespot</item>
+        <item>Renggang</item>
+        <item>Mati</item>
+        <item>Over Spec</item>
+        <item>Under Spec</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="rejectproses">
+        <item>N/A</item>
+        <item>Salah Part/Komponen</item>
+        <item>Scratch/Gores</item>
+        <item>Patah</item>
+        <item>Screw Ngambang</item>
+        <item>Screw Dol</item>
+        <item>Bengkok</item>
+        <item>Tidak Ngunci</item>
+        <item>Terkelupas</item>
+        <item>Socket Lepas</item>
+        <item>Gompal</item>
+        <item>Lepas</item>
+        <item>Sobek</item>
+        <item>Pecah</item>
+        <item>Salah Urutan</item>
+        <item>Pecah</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="rejection_pos1n2">
+        <item>Others</item>
+        <item>Power Folding Patah</item>
+        <item>Power Folding Mati</item>
+        <item>Power Folding Lepas</item>
+        <item>SOD Bengkok</item>
+        <item>Bracket Patah</item>
+        <item>Bracket Short Shot</item>
+        <item>Bracket Burry</item>
+        <item>Teflon Bengkok</item>
+        <item>Washer Patah</item>
+        <item>Detent Plate Bengkok</item>
+        <item>Shaft Burry</item>
+        <item>Shaft Short Shot</item>
+    </string-array>
+
+    <string-array name="rejection_pos3n4">
+        <item>Others</item>
+        <item>Housing Buble</item>
+        <item>Housing Burn Mark</item>
+        <item>Housing Short Shot</item>
+        <item>Housing Silver</item>
+        <item>Housing Burry</item>
+        <item>Housing Flow Mark</item>
+        <item>Housing Scratch</item>
+        <item>Housing Over Cut</item>
+        <item>Aktuator Mati</item>
+        <item>Aktuator Patah</item>
+        <item>Aktuator Duplicate</item>
+        <item>Wire Short Shot</item>
+        <item>Wire Duplicate</item>
+    </string-array>
+
+    <string-array name="rejection_pos5">
+        <item>Others</item>
+        <item>Lampu Mati</item>
+        <item>Lampu Patah</item>
+        <item>Lampu Short Shot</item>
+        <item>Lampu Scratch</item>
+        <item>Lower Scratch</item>
+        <item>Lower Burry</item>
+        <item>Lower Silver</item>
+        <item>KFA Mati</item>
+    </string-array>
+
+    <string-array name="rejection_pos6">
+        <item>Others</item>
+        <item>Basestay Burry</item>
+        <item>Basestay Overcut</item>
+        <item>Basestay Silver</item>
+        <item>Basestay Burnmark</item>
+        <item>Basestay Short Shot</item>
+        <item>Basestay Scratch</item>
+        <item>PAD Gasket Tidak Terpasang</item>
+        <item>Stud Nut/Stud Bolt Tidak ada</item>
+    </string-array>
+
+    <string-array name="rejection_pos7">
+        <item>Others</item>
+        <item>Mirror Distorsi</item>
+        <item>Mirror Scratch</item>
+        <item>Mirror Bintik</item>
+        <item>Mirror Staind</item>
+        <item>Mirror Grepes</item>
+        <item>Mirror Black Spot</item>
+        <item>Cover Base Burry</item>
+        <item>Holder Renggang</item>
+    </string-array>
+
+    <string-array name="rejection">
+        <item>Others</item>
+        <item>Power Folding Patah</item>
+        <item>Power Folding Mati</item>
+        <item>Power Folding Lepas</item>
+        <item>SOD Bengkok</item>
+        <item>Bracket Patah</item>
+        <item>Bracket Short Shot</item>
+        <item>Bracket Burry</item>
+        <item>Teflon Bengkok</item>
+        <item>Washer Patah</item>
+        <item>Detent Plate Bengkok</item>
+        <item>Shaft Burry</item>
+        <item>Shaft Short Shot</item>
+        <item>Housing Buble</item>
+        <item>Housing Burn Mark</item>
+        <item>Housing Short Shot</item>
+        <item>Housing Silver</item>
+        <item>Housing Burry</item>
+        <item>Housing Flow Mark</item>
+        <item>Housing Scratch</item>
+        <item>Housing Over Cut</item>
+        <item>Aktuator Mati</item>
+        <item>Aktuator Patah</item>
+        <item>Aktuator Duplicate</item>
+        <item>Wire Short Shot</item>
+        <item>Wire Duplicate</item>
+        <item>Lampu Mati</item>
+        <item>Lampu Patah</item>
+        <item>Lampu Short Shot</item>
+        <item>Lampu Scratch</item>
+        <item>Lower Scratch</item>
+        <item>Lower Burry</item>
+        <item>Lower Silver</item>
+        <item>KFA Mati</item>
+        <item>Basestay Burry</item>
+        <item>Basestay Overcut</item>
+        <item>Basestay Silver</item>
+        <item>Basestay Burnmark</item>
+        <item>Basestay Short Shot</item>
+        <item>Basestay Scratch</item>
+        <item>PAD Gasket Tidak Terpasang</item>
+        <item>Stud Nut/Stud Bolt Tidak ada </item>
+        <item>Cover Base Burry</item>
+        <item>Holder Renggang</item>
+        <item>Mirror Distorsi</item>
+        <item>Mirror Scratch</item>
+        <item>Mirror Bintik</item>
+        <item>Mirror Staind</item>
+        <item>Mirror Grepes</item>
+        <item>Mirror Black Spot</item>
+    </string-array>
+
+
+    <string-array name="linestop">
+        <item>N/A</item>
+        <item>Komponen Tidak Ada</item>
+        <item>Box Tidak Ada</item>
+        <item>Packaging Tidak Ada</item>
+        <item>Komponen NG</item>
+        <item>Preparation dan Verifikasi</item>
+        <item>Dandory</item>
+        <item>Mesin</item>
+        <item>Jig</item>
+        <item>Sensor</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="komponen1n2">
+        <item>N/A</item>
+        <item>Others</item>
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+    </string-array>
+
+    <string-array name="komponen3n4">
+        <item>N/A</item>
+        <item>Others</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+    </string-array>
+
+    <string-array name="komponen1">
+        <item>N/A</item>
+        <item>Others</item>
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+    </string-array>
+
+    <string-array name="komponen2">
+        <item>N/A</item>
+        <item>Others</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+    </string-array>
+
+    <string-array name="komponen3">
+        <item>N/A</item>
+        <item>Others</item>
+        <item>Housing</item>
+    </string-array>
+
+    <string-array name="komponen4">
+        <item>N/A</item>
+        <item>Others</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+    </string-array>
+
+    <string-array name="komponen5">
+        <item>N/A</item>
+        <item>Others</item>
+        <item>LowerCoverSTSL</item>
+        <item>LowerCoverNon-STSL</item>
+        <item>KFA</item>
+        <item>STSL</item>
+    </string-array>
+
+    <string-array name="komponen6">
+        <item>N/A</item>
+        <item>Others</item>
+        <item>Gasket</item>
+        <item>BaseStay</item>
+        <item>CoverBase</item>
+        <item>ScabingTape</item>
+    </string-array>
+
+    <string-array name="komponen7">
+        <item>N/A</item>
+        <item>Others</item>
+        <item>Connector</item>
+        <item>MarkingTape</item>
+        <item>Mirror</item>
+    </string-array>
+
+    <string-array name="komponenall">
+        <item>N/A</item>
+        <item>Others</item>
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Grease</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>Wiring Harness</item>
+        <item>LowerCoverSTSL</item>
+        <item>LowerCoverNon-STSL</item>
+        <item>KFA</item>
+        <item>STSL</item>
+        <item>Gasket</item>
+        <item>CoverBase</item>
+        <item>ScabingTape</item>
+        <item>BaseStay</item>
+        <item>Connector</item>
+        <item>MarkingTape</item>
+        <item>ScabingTape</item>
+        <item>Mirror</item>
+    </string-array>
+
+    <string-array name="kodepart">
+        <item>N/A</item>
+        <item>C00 NT-0920</item>
+        <item>B60 NT-0933</item>
+        <item>C10 NT-0921</item>
+        <item>B70 NT-0934</item>
+        <item>C20 NT-0922</item>
+        <item>B80 NT-0935</item>
+        <item>C30 NT-0923</item>
+        <item>B90 NT-0936</item>
+        <item>C50 NT-0924</item>
+        <item>A   NT-0937</item>
+        <item>C80 NT-0925</item>
+        <item>C40 NT-0938</item>
+        <item>D30 NT-0926</item>
+        <item>C90 NT-0939</item>
+        <item>B20 NX-4325</item>
+        <item>B30 NX-4326</item>
+        <item>E00 NX-4327</item>
+        <item>E10 NX-4328</item>
+        <item>E30 NX-4329</item>
+        <item>E60 NX-4330</item>
+        <item>E70 NX-4331</item>
+        <item>E80 NX-4319</item>
+        <item>E90 NX-4320</item>
+        <item>F00 NX-4321</item>
+        <item>B   NX-4336</item>
+        <item>C   NX-4322</item>
+        <item>D   NX-4323</item>
+        <item>D50 NX-4332</item>
+        <item>D60 NX-4333</item>
+        <item>D80 NX-4334</item>
+        <item>D90 NX-4335</item>
+        <item>E   NX-4324</item>
+        <item>E40 NX-4337</item>
+        <item>E50 NX-4338</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--LIST PART HIGH -->
+    <string-array name="highproses1">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+    </string-array>
+
+    <string-array name="highproses2">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+    </string-array>
+
+    <string-array name="highproses3">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+    </string-array>
+
+    <string-array name="highproses4">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+    </string-array>
+
+    <string-array name="highproses5">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverSTSL</item>
+        <item>KFA</item>
+        <item>STSL</item>
+    </string-array>
+
+    <string-array name="highproses6">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverSTSL</item>
+        <item>KFA</item>
+        <item>STSL</item>
+        <item>Gasket</item>
+        <item>CoverBase</item>
+        <item>ScabingTape</item>
+        <item>BaseStay</item>
+    </string-array>
+
+    <string-array name="highproses7">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverSTSL</item>
+        <item>KFA</item>
+        <item>STSL</item>
+        <item>Gasket</item>
+        <item>CoverBase</item>
+        <item>ScabingTape</item>
+        <item>BaseStay</item>
+        <item>Connector</item>
+        <item>MarkingTape</item>
+        <item>Mirror</item>
+    </string-array>
+
+    <!--LIST PART MID STSL -->
+    <string-array name="midstslproses1">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+    </string-array>
+
+    <string-array name="midstslproses2">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+    </string-array>
+
+    <string-array name="midstslproses3">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+    </string-array>
+
+    <string-array name="midstslproses4">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+    </string-array>
+
+    <string-array name="midstslproses5">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverSTSL</item>
+        <item>STSL</item>
+    </string-array>
+
+    <string-array name="midstslproses6">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverSTSL</item>
+        <item>STSL</item>
+        <item>Gasket</item>
+        <item>CoverBase</item>
+        <item>ScabingTape</item>
+        <item>BaseStay</item>
+    </string-array>
+
+    <string-array name="midstslproses7">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverSTSL</item>
+        <item>STSL</item>
+        <item>Gasket</item>
+        <item>CoverBase</item>
+        <item>ScabingTape</item>
+        <item>BaseStay</item>
+        <item>Connector</item>
+        <item>MarkingTape</item>
+        <item>Mirror</item>
+    </string-array>
+
+    <!--LIST PART MID NON STSL -->
+    <string-array name="midnonstslproses1">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+    </string-array>
+
+    <string-array name="midnonstslproses2">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+    </string-array>
+
+    <string-array name="midnonstslproses3">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+    </string-array>
+
+    <string-array name="midnonstslproses4">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+    </string-array>
+
+    <string-array name="midnonstslproses5">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverNon-STSL</item>
+    </string-array>
+
+    <string-array name="midnonstslproses6">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverNon-STSL</item>
+        <item>Gasket</item>
+        <item>CoverBase</item>
+        <item>ScabingTape</item>
+        <item>BaseStay</item>
+    </string-array>
+
+    <string-array name="midnonstslproses7">
+        <item>Bracket</item>
+        <item>PowerFolding</item>
+        <item>SOD</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverNon-STSL</item>
+        <item>Gasket</item>
+        <item>CoverBase</item>
+        <item>ScabingTape</item>
+        <item>BaseStay</item>
+        <item>Connector</item>
+        <item>MarkingTape</item>
+        <item>Mirror</item>
+    </string-array>
+
+
+    <!--LIST PART LOW STSL -->
+    <string-array name="lowstslproses1">
+        <item>Bracket</item>
+    </string-array>
+
+    <string-array name="lowstslproses2">
+        <item>Bracket</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+    </string-array>
+
+    <string-array name="lowstslproses3">
+        <item>Bracket</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+    </string-array>
+
+    <string-array name="lowstslproses4">
+        <item>Bracket</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+    </string-array>
+
+    <string-array name="lowstslproses5">
+        <item>Bracket</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverSTSL</item>
+        <item>STSL</item>
+    </string-array>
+
+    <string-array name="lowstslproses6">
+        <item>Bracket</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverSTSL</item>
+        <item>STSL</item>
+        <item>Gasket</item>
+        <item>CoverBase</item>
+        <item>ScabingTape</item>
+        <item>BaseStay</item>
+    </string-array>
+
+    <string-array name="lowstslproses7">
+        <item>Bracket</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverSTSL</item>
+        <item>STSL</item>
+        <item>Gasket</item>
+        <item>CoverBase</item>
+        <item>ScabingTape</item>
+        <item>BaseStay</item>
+        <item>Connector</item>
+        <item>MarkingTape</item>
+        <item>Mirror</item>
+    </string-array>
+
+
+
+    <!--LIST PART LOW NON STSL -->
+    LOW N STSL
+    <string-array name="lownonstslproses1">
+        <item>Bracket</item>
+    </string-array>
+
+    <string-array name="lownonstslproses2">
+        <item>Bracket</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+    </string-array>
+
+    <string-array name="lownonstslproses3">
+        <item>Bracket</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+    </string-array>
+
+    <string-array name="lownonstslproses4">
+        <item>Bracket</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+    </string-array>
+
+    <string-array name="lownonstslproses5">
+        <item>Bracket</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverNon-STSL</item>
+    </string-array>
+
+    <string-array name="lownonstslproses6">
+        <item>Bracket</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverNon-STSL</item>
+        <item>Gasket</item>
+        <item>CoverBase</item>
+        <item>ScabingTape</item>
+        <item>BaseStay</item>
+    </string-array>
+
+    <string-array name="lownonstslproses7">
+        <item>Bracket</item>
+        <item>Shaft</item>
+        <item>Washer</item>
+        <item>WasherTeflon</item>
+        <item>DetentPlate</item>
+        <item>Spring</item>
+        <item>Housing</item>
+        <item>Actuator</item>
+        <item>WiringHarness</item>
+        <item>LowerCoverNon-STSL</item>
+        <item>Gasket</item>
+        <item>CoverBase</item>
+        <item>ScabingTape</item>
+        <item>BaseStay</item>
+        <item>Connector</item>
+        <item>MarkingTape</item>
+        <item>Mirror</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_startstop"
+            android:icon="@android:drawable/ic_lock_idle_alarm"
+            android:title="@string/startstop"/>
+
+    <item
+            android:id="@+id/navigation_rejectkomponen"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="@string/rejectkomponen"/>
+
+    <item
+            android:id="@+id/navigation_andon"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="@string/andon"/>
+
+</menu>
