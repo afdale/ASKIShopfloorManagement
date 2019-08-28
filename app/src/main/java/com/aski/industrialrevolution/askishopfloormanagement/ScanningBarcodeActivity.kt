@@ -1,33 +1,19 @@
 package com.aski.industrialrevolution.askishopfloormanagement
 
-import android.app.Activity
 import android.app.Dialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.os.AsyncTask
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ServerValue
 import com.google.zxing.Result
-import kotlinx.android.synthetic.main.fragment_start_stop.*
 import me.dm7.barcodescanner.zxing.ZXingScannerView
-import android.R.id.edit
-import android.content.SharedPreferences
-import android.os.AsyncTask
-import android.preference.PreferenceManager
-import android.view.View
-import android.widget.ImageButton
-import android.widget.Switch
-import androidx.core.content.ContextCompat.startActivity
-import com.google.firebase.database.Exclude
-import com.google.zxing.client.result.AddressBookParsedResult
-import com.google.zxing.client.result.ResultParser
-import com.google.zxing.client.result.VCardResultParser
 import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.Exception
 
 
 class ScanningBarcodeActivity : AppCompatActivity(), ZXingScannerView.ResultHandler {
@@ -127,7 +113,8 @@ class ScanningBarcodeActivity : AppCompatActivity(), ZXingScannerView.ResultHand
         //problem = getIntent().getStringExtra("problem")
         //dept = getIntent().getStringExtra("dept")
 
-        if ((asal=="scan1")||(asal=="scan2")||(asal=="scan3")||(asal=="scan4")||(asal=="scan5")||(asal=="scan6")||(asal=="scanandon")||(asal=="scanmcrej")||(asal=="scanmcsetting")){
+        if ((asal=="scan1")||(asal=="scan2")||(asal=="scan3")||(asal=="scan4")||(asal=="scan5")||(asal=="scan6")||
+            (asal=="scanandon")||(asal=="scanmcrej")||(asal=="scanmcsetting")){
             tulisanTVNEW.text = "Scan QR CODE pada MC untuk menyelesaikan"
         }
         else if ((asal.contains("MC",false))||(asal=="andon")){

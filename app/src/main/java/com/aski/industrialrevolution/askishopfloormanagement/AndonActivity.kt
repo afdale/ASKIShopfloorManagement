@@ -2,10 +2,10 @@ package com.aski.industrialrevolution.askishopfloormanagement
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 
 
 class AndonActivity : AppCompatActivity() {

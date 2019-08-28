@@ -1,28 +1,17 @@
 package com.aski.industrialrevolution.askishopfloormanagement
 
 import android.app.Dialog
+import android.graphics.Color
+import android.os.AsyncTask
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat.startActivity
-import android.content.Intent
-import android.graphics.Color
-import android.media.Image
-import android.net.Uri
-import android.os.AsyncTask
 import android.widget.*
-import androidx.fragment.app.ListFragment
+import android.widget.ArrayAdapter
+import androidx.fragment.app.Fragment
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ServerValue
-import kotlinx.android.synthetic.main.fragment_reject_komponen.*
-import kotlin.Exception
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import kotlinx.android.synthetic.main.fragment_reject_komponen.view.*
-import android.widget.CompoundButton
-import com.aski.industrialrevolution.askishopfloormanagement.R.id.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -88,7 +77,8 @@ class RejectKomponenFragment : Fragment(),View.OnClickListener {
         try {
             connectionClass = ConnectionClass()
 
-            root = inflater.inflate(R.layout.fragment_reject_komponen, container, false)
+            root = inflater.inflate(R.layout.fragment_reject_komponen,
+                container, false)
             pilihanbtn = root.findViewById<Switch>(R.id.pilihanbtn) as Switch
             spinnerpart = root.findViewById<Spinner>(R.id.spinnerpart) as Spinner
             spinnerpartproc = root.findViewById<Spinner>(R.id.spinnerpartproc) as Spinner

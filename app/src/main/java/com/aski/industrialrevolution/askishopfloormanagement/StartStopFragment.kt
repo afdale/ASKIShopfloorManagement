@@ -1,28 +1,27 @@
 package com.aski.industrialrevolution.askishopfloormanagement
 
 
-import android.content.Context
+//import com.google.android.gms.flags.impl.SharedPreferencesFactory.getSharedPreferences
 import android.content.Intent
 import android.content.SharedPreferences
-import android.media.Image
+import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-//import com.google.android.gms.flags.impl.SharedPreferencesFactory.getSharedPreferences
-import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.fragment_start_stop.*
+import android.widget.ImageButton
+import android.widget.Switch
+import android.widget.TextView
+import android.widget.Toast
+import androidx.fragment.app.Fragment
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.Exception
-import android.R.id.button1
-import android.R.id.button1
-import android.graphics.Color
-import android.text.Editable
-import android.text.TextWatcher
-import android.widget.*
 
 
 // TODO: Rename parameter arguments, choose names that match

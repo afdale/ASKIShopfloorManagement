@@ -1,30 +1,15 @@
 package com.aski.industrialrevolution.askishopfloormanagement
 
 import android.app.Activity
-import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.view.View
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlin.Exception
-import android.provider.SyncStateContract.Helpers.update
-import android.provider.SyncStateContract.Helpers.update
-import android.preference.PreferenceManager
-import android.content.SharedPreferences
-import android.widget.*
-import androidx.core.app.ActivityCompat.startActivityForResult
-import androidx.core.content.ContextCompat.startActivity
-import androidx.fragment.app.FragmentActivity
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ServerValue
-import android.R.attr.fragment
-import android.util.Log
-import android.widget.EditText
-
-
 
 
 class MainActivity : AppCompatActivity() {
@@ -35,12 +20,6 @@ class MainActivity : AppCompatActivity() {
     var myMCnow:String? = "N/A"
     var myMC2:String? = "N/A"
 
-    var a1:String? = "N/A"
-    var a2:String? = "N/A"
-    var a3:String? = "N/A"
-    var a4:String? = "N/A"
-    var a5:String? = "N/A"
-    var a6:String? = "N/A"
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId){
@@ -51,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.navigation_rejectkomponen -> {
                 replacetext()
-                //replaceFragment(RejectKomponenFragment())
+                replaceFragment(RejectKomponenFragment())
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_andon -> {
@@ -71,25 +50,6 @@ class MainActivity : AppCompatActivity() {
         fragobj = RejectKomponenFragment()
 
 
-        //myString = getIntent().getStringExtra("part")
-        //myString = "Hello There"
-        /*try {
-        val bundle = Bundle()
-        bundle.putString("part", "From Activity")
-        // set Fragmentclass Arguments
-        val fragobj = RejectKomponenFragment()
-        fragobj.arguments = bundle
-        }catch (ex: Exception){
-            Toast.makeText(this, "$ex", Toast.LENGTH_LONG).show()
-        }*/
-
-        /*try {
-                RejectKomponenFragment().update("stest")
-        }catch (ex: Exception){
-            Toast.makeText(this, "$ex", Toast.LENGTH_LONG).show()
-        }*/
-        //partnumberTV = findViewById<TextView>(R.id.partnumberTV)
-        //jenisNGTV = findViewById<TextView>(R.id.jenisNGTV)
     }
 
     override fun onResume() {
@@ -98,8 +58,6 @@ class MainActivity : AppCompatActivity() {
         val mSharedPreference = PreferenceManager.getDefaultSharedPreferences(baseContext)
         myMC2 = mSharedPreference.getString("MC", "N/A")
 
-        /*val sharedPref = PreferenceManager.getDefaultSharedPreferences(this)
-        myString = sharedPref.getString("part", "Not Available")*/
     }
 
     fun getMyData(): String? {

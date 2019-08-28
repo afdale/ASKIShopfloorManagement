@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "338760147777",
-    "firebase_url": "https://askishopfloormanagement.firebaseio.com",
-    "project_id": "askishopfloormanagement",
-    "storage_bucket": "askishopfloormanagement.appspot.com"
+    "project_number": "271583063764",
+    "firebase_url": "https://askishopfloormoldshop.firebaseio.com",
+    "project_id": "askishopfloormoldshop",
+    "storage_bucket": "askishopfloormoldshop.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:338760147777:android:0e1abf27d5738d82",
+        "mobilesdk_app_id": "1:271583063764:android:0e1abf27d5738d82",
         "android_client_info": {
           "package_name": "com.aski.industrialrevolution.askishopfloormanagement"
         }
       },
       "oauth_client": [
         {
-          "client_id": "338760147777-ksau7bajtkuhi42lj84n2um8sh00jgbn.apps.googleusercontent.com",
+          "client_id": "271583063764-eufmn6avbm0ev0n3guo4j5v25bvbsepg.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.aski.industrialrevolution.askishopfloormanagement",
-            "certificate_hash": "3ab71cbbc2c7f0ce8d5df4fcf547c4ba99a6ac50"
+            "certificate_hash": "051d50c5c1eb4a8eb2bfc49dc9116cd5b0f52182"
           }
         },
         {
-          "client_id": "338760147777-e9chtrd25qbkvhbi4nr3gq8aj5qke95r.apps.googleusercontent.com",
+          "client_id": "271583063764-c5qrt5jb7glq1k6qslf8lfqsqvljrkvg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAma4ZIVnyxpvb5XLyHodKVEj540y80KXM"
+          "current_key": "AIzaSyDtuzSf9-Ubgx5fNNbhZlyb2A5PU6-jQ6k"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "338760147777-e9chtrd25qbkvhbi4nr3gq8aj5qke95r.apps.googleusercontent.com",
+              "client_id": "271583063764-c5qrt5jb7glq1k6qslf8lfqsqvljrkvg.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
