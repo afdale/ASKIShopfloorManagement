@@ -98,6 +98,12 @@ class AndonActivity : AppCompatActivity() {
         }
     }
 
+    fun goMS(view: View) {
+        if(problemsaatini!="N/A") {
+            dept = "MS"
+            DoAndon()
+        }
+    }
 
 
     private fun DoAndon (){
