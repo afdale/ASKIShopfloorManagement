@@ -145,6 +145,11 @@ class MainActivity : AppCompatActivity() {
         DoUpload()
     }
 
+    fun goAndon2(view:View){
+        asal = "scanandon2"
+        DoUpload()
+    }
+
     fun onscanMCSetting(view: View){
         asal = "scanmcrej"
         DoResult(2)
