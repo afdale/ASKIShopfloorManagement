@@ -522,6 +522,7 @@ class ScanningBarcodeActivity : AppCompatActivity(), ZXingScannerView.ResultHand
                         z = "ERRROR : $ez"
                     }
                 }else {*/
+
                     isSuccess = false
                     z = "ERROR : $ex"
                 //}
