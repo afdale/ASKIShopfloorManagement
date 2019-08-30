@@ -95,16 +95,37 @@
             app:layout_constraintTop_toBottomOf="@+id/komponenandonET"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="@+id/peBTN"
             android:layout_marginTop="32dp"/>
+
     <ImageButton
+            android:id="@+id/msBTN"
             android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:onClick="goMS"
             android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/komponenandonET"
+            app:layout_constraintVertical_bias="0.518"
+            app:srcCompat="@drawable/eng" />
+
+    <ImageButton
+            android:id="@+id/peBTN"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:background="#00FFFFFF"
             android:onClick="goPE"
-            android:layout_height="100dp" app:srcCompat="@drawable/pe"
-            android:id="@+id/peBTN" app:layout_constraintStart_toEndOf="@+id/engBTN"
+            android:scaleType="fitCenter"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.151"
-            app:layout_constraintTop_toTopOf="@+id/engBTN"/>
+            app:layout_constraintStart_toEndOf="@+id/engBTN"
+            app:layout_constraintTop_toTopOf="@+id/engBTN"
+            app:srcCompat="@drawable/pe" />
+
     <ImageButton
             android:layout_width="100dp"
             android:scaleType="fitCenter"

@@ -114,7 +114,7 @@ class ScanningBarcodeActivity : AppCompatActivity(), ZXingScannerView.ResultHand
         //dept = getIntent().getStringExtra("dept")
 
         if ((asal=="scan1")||(asal=="scan2")||(asal=="scan3")||(asal=="scan4")||(asal=="scan5")||(asal=="scan6")||
-            (asal=="scanandon") ||(asal=="scanandon2")  ||(asal=="scanmcrej")||(asal=="scanmcsetting")){
+            (asal=="scanandon")||(asal=="scanmcrej")||(asal=="scanmcsetting")){
             tulisanTVNEW.text = "Scan QR CODE pada MC untuk menyelesaikan"
         }
         else if ((asal.contains("MC",false))||(asal=="andon")){
@@ -255,12 +255,6 @@ class ScanningBarcodeActivity : AppCompatActivity(), ZXingScannerView.ResultHand
             val launch4 = Intent(this, AndonActivity::class.java)
             launch4.putExtra("asal","andonafterscan")
             launch4.putExtra("mc",rawResult.getText())
-            startActivity(launch4)
-        }
-        else if ((asal =="scanandon2")&&rawResult.getText().contains("MS",false)){
-            val launch4 = Intent(this, AndonActivity::class.java)
-            launch4.putExtra("asal","andonafterscan")
-            launch4.putExtra("ms",rawResult.getText())
             startActivity(launch4)
         }
         else if ((asal =="scanpart")&&rawResult.getText().contains("PART",false)){
