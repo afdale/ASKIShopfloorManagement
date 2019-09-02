@@ -10,23 +10,29 @@
     <!-- TODO: Update blank fragment layout -->
 
     <ImageButton
-            android:background="@drawable/call"
+            android:id="@+id/callAndon"
             android:layout_width="200dp"
             android:layout_height="206dp"
-            android:id="@+id/callAndon" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.507" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/call"
             android:onClick="goAndon"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-            android:text="Tekan tombol untuk Andon dan memanggil PIC Departemen"
+            android:id="@+id/textView"
             android:layout_width="204dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/bahnschrift"
             android:layout_height="83dp"
-            android:id="@+id/textView" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.497" app:layout_constraintEnd_toEndOf="parent"
-            android:textSize="18sp" android:textAlignment="center" android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/callAndon"
-    />
+            android:fontFamily="@font/bahnschrift"
+            android:text="Tekan tombol untuk Andon dan memanggil PIC Departemen"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/callAndon" />
 </androidx.constraintlayout.widget.ConstraintLayout>
